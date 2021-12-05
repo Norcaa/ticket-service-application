@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="hu"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ProjectionCommandHandler.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ticket-service</a> &gt; <a href="index.source.html" class="el_package">com.epam.training.ticketservice.presentation.cli.handler</a> &gt; <span class="el_source">ProjectionCommandHandler.java</span></div><h1>ProjectionCommandHandler.java</h1><pre class="source lang-java linenums">package com.epam.training.ticketservice.presentation.cli.handler;
+
+import com.epam.training.ticketservice.model.Movie;
+import com.epam.training.ticketservice.model.Projection;
+import com.epam.training.ticketservice.service.MovieService;
+import com.epam.training.ticketservice.service.ProjectionService;
+import com.epam.training.ticketservice.service.RoomService;
+import com.epam.training.ticketservice.service.UserService;
+import org.springframework.shell.standard.ShellComponent;
+import org.springframework.shell.standard.ShellMethod;
+
+import java.text.ParseException;
+import java.util.List;
+
+@ShellComponent
+public class ProjectionCommandHandler {
+
+    private final ProjectionService projectionService;
+    private final MovieService movieService;
+    private final RoomService roomService;
+    private final UserService userService;
+
+    public ProjectionCommandHandler(ProjectionService projectionService, MovieService movieService,
+<span class="nc" id="L24">                                    RoomService roomService, UserService userService) {</span>
+<span class="nc" id="L25">        this.projectionService = projectionService;</span>
+<span class="nc" id="L26">        this.movieService = movieService;</span>
+<span class="nc" id="L27">        this.roomService = roomService;</span>
+<span class="nc" id="L28">        this.userService = userService;</span>
+<span class="nc" id="L29">    }</span>
+
+    @ShellMethod(value = &quot;Create a projection&quot;, key = &quot;create screening&quot;)
+    public String createProjection(final String movieTitle, String roomName, String startDate) throws ParseException {
+        /*if (userService.adminLoggedIn()) {
+            String canCreate = projectionService.canCreate(movieTitle, roomName, startDate);
+            if (canCreate == null) {
+                projectionService.createProjection(movieTitle, roomName, startDate);
+                return &quot;Projection created.&quot;;
+            }
+            return canCreate;
+        }
+        return &quot;You are not an admin&quot;;*/
+<span class="nc" id="L42">        return projectionService.createProjection(movieTitle, roomName, startDate);</span>
+    }
+
+    @ShellMethod(value = &quot;List screenings&quot;, key = &quot;list screenings&quot;)
+    public String listProjections() {
+<span class="nc" id="L47">        List&lt;Projection&gt; projections = projectionService.getProjections();</span>
+<span class="nc bnc" id="L48" title="All 2 branches missed.">        if (!projections.isEmpty()) {</span>
+<span class="nc" id="L49">            String result = &quot;&quot;;</span>
+<span class="nc bnc" id="L50" title="All 2 branches missed.">            for (int i = 0; i &lt; projections.size(); i++) {</span>
+<span class="nc" id="L51">                Movie movie = movieService.getMovie(projections.get(i).getMovieTitle());</span>
+<span class="nc" id="L52">                result += (String.format(&quot;%s (%s, %d minutes), screened in room %s, at %s%n&quot;,</span>
+<span class="nc" id="L53">                        projections.get(i).getMovieTitle(), movie.getGenre(), movie.getLength(),</span>
+<span class="nc" id="L54">                        projections.get(i).getRoomName(), projections.get(i).getStartDate()));</span>
+            }
+<span class="nc" id="L56">            return result;</span>
+        } else {
+<span class="nc" id="L58">            return &quot;There are no screenings&quot;;</span>
+        }
+    }
+
+    @ShellMethod(value = &quot;Delete a screening&quot;, key = &quot;delete screening&quot;)
+    public String deleteProjections(final String movie, String room, String date) {
+<span class="nc bnc" id="L64" title="All 2 branches missed.">        if (userService.adminLoggedIn()) {</span>
+<span class="nc" id="L65">            Projection projectionToDelete = projectionService.getProjections().stream()</span>
+<span class="nc" id="L66">                    .filter(projection -&gt; movie.equals(projection.getMovieTitle()))</span>
+<span class="nc" id="L67">                    .filter(projection -&gt; room.equals(projection.getRoomName()))</span>
+<span class="nc" id="L68">                    .filter(projection -&gt; date.equals(projection.getStartDate()))</span>
+<span class="nc" id="L69">                    .findAny()</span>
+<span class="nc" id="L70">                    .orElse(null);</span>
+<span class="nc bnc" id="L71" title="All 2 branches missed.">            if (projectionToDelete != null) {</span>
+<span class="nc" id="L72">                projectionService.deleteProjection(projectionToDelete);</span>
+<span class="nc" id="L73">                return &quot;Projection deleted.&quot;;</span>
+            } else {
+<span class="nc" id="L75">                return &quot;Projection do not exists.&quot;;</span>
+            }
+        }
+<span class="nc" id="L78">        return &quot;You are not an admin&quot;;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

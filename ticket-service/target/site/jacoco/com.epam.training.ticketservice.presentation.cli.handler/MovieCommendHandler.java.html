@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="hu"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MovieCommendHandler.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ticket-service</a> &gt; <a href="index.source.html" class="el_package">com.epam.training.ticketservice.presentation.cli.handler</a> &gt; <span class="el_source">MovieCommendHandler.java</span></div><h1>MovieCommendHandler.java</h1><pre class="source lang-java linenums">package com.epam.training.ticketservice.presentation.cli.handler;
+
+import com.epam.training.ticketservice.model.Movie;
+import com.epam.training.ticketservice.service.MovieService;
+import com.epam.training.ticketservice.service.UserService;
+import org.springframework.shell.standard.ShellComponent;
+import org.springframework.shell.standard.ShellMethod;
+
+import java.util.List;
+
+@ShellComponent
+public class MovieCommendHandler {
+
+    private final MovieService movieService;
+    private final UserService userService;
+
+<span class="nc" id="L17">    public MovieCommendHandler(MovieService movieService, UserService userService) {</span>
+<span class="nc" id="L18">        this.movieService = movieService;</span>
+<span class="nc" id="L19">        this.userService = userService;</span>
+<span class="nc" id="L20">    }</span>
+
+    // todo trycatch
+    @ShellMethod(value = &quot;Create a movie&quot;, key = &quot;create movie&quot;)
+    public String createMovie(final String title, String genre, Integer length) {
+<span class="nc bnc" id="L25" title="All 2 branches missed.">        if (userService.adminLoggedIn()) {</span>
+<span class="nc" id="L26">            Movie createdMovie = movieService.createMovie(title, genre, length);</span>
+<span class="nc" id="L27">            return &quot;Movie created.&quot;;</span>
+        }
+<span class="nc" id="L29">        return &quot;You are not an admin&quot;;</span>
+    }
+
+    @ShellMethod(value = &quot;List movies&quot;, key = &quot;list movies&quot;)
+    public String listMovies() {
+<span class="nc" id="L34">        List&lt;Movie&gt; movies = movieService.getMovies();</span>
+<span class="nc bnc" id="L35" title="All 2 branches missed.">        if (!movies.isEmpty()) {</span>
+<span class="nc" id="L36">            String result = &quot;&quot;;</span>
+<span class="nc bnc" id="L37" title="All 2 branches missed.">            for (int i = 0; i &lt; movies.size(); i++) {</span>
+<span class="nc" id="L38">                result += String.format(&quot;%s (%s, %d minutes)%n&quot;, movies.get(i).getTitle(),</span>
+<span class="nc" id="L39">                        movies.get(i).getGenre(), movies.get(i).getLength());</span>
+            }
+<span class="nc" id="L41">            return result;</span>
+        }
+<span class="nc" id="L43">        return &quot;There are no movies at the moment&quot;;</span>
+    }
+
+    @ShellMethod(value = &quot;Update a movie&quot;, key = &quot;update movie&quot;)
+    public String updateMovie(final String title, String genre, Integer length) {
+<span class="nc bnc" id="L48" title="All 2 branches missed.">        if (userService.adminLoggedIn()) {</span>
+<span class="nc" id="L49">            movieService.updateMovie(title, genre, length);</span>
+<span class="nc" id="L50">            return null;</span>
+        }
+<span class="nc" id="L52">        return &quot;You are not an admin&quot;;</span>
+    }
+
+    @ShellMethod(value = &quot;Delete a movie&quot;, key = &quot;delete movie&quot;)
+    public String deleteMovie(final String title) {
+<span class="nc bnc" id="L57" title="All 2 branches missed.">        if (userService.adminLoggedIn()) {</span>
+<span class="nc" id="L58">            Movie movieToDelete = movieService.getMovies().stream()</span>
+<span class="nc" id="L59">                    .filter(room -&gt; title.equals(room.getTitle()))</span>
+<span class="nc" id="L60">                    .findAny()</span>
+<span class="nc" id="L61">                    .orElse(null);</span>
+<span class="nc bnc" id="L62" title="All 2 branches missed.">            if (movieToDelete != null) {</span>
+<span class="nc" id="L63">                movieService.deleteMovie(movieToDelete);</span>
+<span class="nc" id="L64">                return null;</span>
+            } else {
+<span class="nc" id="L66">                return &quot;Movie do not exists.&quot;;</span>
+            }
+        }
+<span class="nc" id="L69">        return &quot;You are not an admin&quot;;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

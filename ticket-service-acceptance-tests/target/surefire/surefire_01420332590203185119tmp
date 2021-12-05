@@ -1,0 +1,7 @@
+#surefire_0
+#Fri Dec 03 15:43:09 CET 2021
+basedir=C\:\\Users\\Lenovo PC\\gyak\\PROJECTS\\java-beadand\u00F3\\epam-deik-java-dev-2021-22_semester-01_Tuesday_group\\final\\ticket-service-acceptance-tests
+idea.version=2020.3.2
+cucumber.filter.tags=@grade2-requirement or @grade3-requirement
+user.dir=C\:\\Users\\Lenovo PC\\gyak\\PROJECTS\\java-beadand\u00F3\\epam-deik-java-dev-2021-22_semester-01_Tuesday_group\\final\\ticket-service-acceptance-tests
+localRepository=C\:\\Users\\Lenovo PC\\.m2\\repository

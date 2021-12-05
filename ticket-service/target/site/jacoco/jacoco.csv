@@ -1,0 +1,17 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+ticket-service,com.epam.training.ticketservice.model,Room,81,28,11,1,10,10,14,5,8,5
+ticket-service,com.epam.training.ticketservice.model,Movie,78,31,11,1,9,11,13,6,7,6
+ticket-service,com.epam.training.ticketservice.model,Projection,78,29,9,1,9,12,12,6,7,6
+ticket-service,com.epam.training.ticketservice.presentation.cli.config,TicketServiceConfiguration,26,0,0,0,5,0,5,0,5,0
+ticket-service,com.epam.training.ticketservice,Application,8,0,0,0,3,0,2,0,2,0
+ticket-service,com.epam.training.ticketservice,TicketServicePromptProvider,8,0,0,0,2,0,2,0,2,0
+ticket-service,com.epam.training.ticketservice.service.imp,RoomServiceImp,10,59,0,2,2,18,1,7,1,6
+ticket-service,com.epam.training.ticketservice.service.imp,MovieServiceImp,19,85,0,2,2,21,1,8,1,7
+ticket-service,com.epam.training.ticketservice.service.imp,ProjectionServiceImp,27,209,8,20,3,44,7,15,1,7
+ticket-service,com.epam.training.ticketservice.service.imp,UserServiceImp,21,0,0,0,7,0,4,0,4,0
+ticket-service,com.epam.training.ticketservice.presentation.cli.handler,RoomCommandHandler,141,0,12,0,31,0,12,0,6,0
+ticket-service,com.epam.training.ticketservice.presentation.cli.handler,ProjectionCommandHandler,142,0,8,0,29,0,11,0,7,0
+ticket-service,com.epam.training.ticketservice.presentation.cli.handler,AuthCommandHandler,42,0,6,0,14,0,7,0,4,0
+ticket-service,com.epam.training.ticketservice.presentation.cli.handler,MovieCommendHandler,124,0,12,0,30,0,12,0,6,0
+ticket-service,com.epam.training.ticketservice.repository.config,JpaConfig,3,0,0,0,1,0,1,0,1,0
+ticket-service,com.epam.training.ticketservice.repository,UserRepository,3,0,0,0,1,0,1,0,1,0

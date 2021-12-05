@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="17" failures="1" name="com.training.epam.ticketservice.at.TestExecutor" time="262.452" errors="14" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="idea.version" value="2020.3.2"/>
+    <property name="java.vm.version" value="17.0.1+12-39"/>
+    <property name="sun.boot.library.path" value="C:\Users\Lenovo PC\.jdks\openjdk-17.0.1\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Lenovo PC\gyak\PROJECTS\java-beadandó\epam-deik-java-dev-2021-22_semester-01_Tuesday_group\final"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="user.country" value="HU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.script" value=""/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.dir" value="C:\Users\Lenovo PC\gyak\PROJECTS\java-beadandó\epam-deik-java-dev-2021-22_semester-01_Tuesday_group\final"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.runtime.version" value="17.0.1+12-39"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\LENOVO~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1250"/>
+    <property name="java.library.path" value="C:\Users\Lenovo PC\.jdks\openjdk-17.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\MinGW\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\nodejs\;C:\Program Files\PostgreSQL\14\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Python 3\Scripts\;C:\Python 3\;C:\Users\Lenovo PC\AppData\Local\Microsoft\WindowsApps;C:\Users\Lenovo PC\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Lenovo PC\spicetify-cli;C:\Users\Lenovo PC\AppData\Roaming\npm;C:\Users\Lenovo PC\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Lenovo PC"/>
+    <property name="user.timezone" value="Europe/Budapest"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="Lenovo PC"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2020.3.2 test -P requirements-grade3,requirements-grade2"/>
+    <property name="java.home" value="C:\Users\Lenovo PC\.jdks\openjdk-17.0.1"/>
+    <property name="user.language" value="hu"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17.0.1"/>
+    <property name="native.encoding" value="Cp1250"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-10-19"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="allow creating accounts and logging in" name="the admin account exists by default and can be logged in with the correct password" time="13.673"/>
+  <testcase classname="allow creating accounts and logging in" name="the admin account can be signed out" time="15.275">
+    <error type="java.util.concurrent.TimeoutException">java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:155)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.runWithTimeout(ProcessUnderTest.java:87)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.waitForOutput(ProcessUnderTest.java:42)
+	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.promptReturned(GenericCliProcessStepDefs.java:32)
+	at ✽.the prompt containing &quot;Ticket service&gt;&quot; is printed(file:///C:/Users/Lenovo%20PC/gyak/PROJECTS/java-beadandó/epam-deik-java-dev-2021-22_semester-01_Tuesday_group/final/ticket-service-acceptance-tests/src/test/resources/features/accounts.feature:5)
+</error>
+  </testcase>
+  <testcase classname="allow creating accounts and logging in" name="the admin account can not be logged in with incorrect password" time="15.24">
+    <error type="java.util.concurrent.TimeoutException">java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:155)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.runWithTimeout(ProcessUnderTest.java:87)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.waitForOutput(ProcessUnderTest.java:42)
+	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.promptReturned(GenericCliProcessStepDefs.java:32)
+	at ✽.the prompt containing &quot;Ticket service&gt;&quot; is printed(file:///C:/Users/Lenovo%20PC/gyak/PROJECTS/java-beadandó/epam-deik-java-dev-2021-22_semester-01_Tuesday_group/final/ticket-service-acceptance-tests/src/test/resources/features/accounts.feature:5)
+</error>
+  </testcase>
+  <testcase classname="allows creating movie descriptions" name="an admin user can create and list movies" time="16.297"/>
+  <testcase classname="allows creating movie descriptions" name="an admin user can update a movie" time="15.859">
+    <failure message="
+Expected: &quot;Sátántangó (drama, 450 minutes)&quot;
+     but: was &quot;Ticket service&gt; Ticket service&gt; Sátántangó (drama, 450 minutes)&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: &quot;Sátántangó (drama, 450 minutes)&quot;
+     but: was &quot;Ticket service&gt; Ticket service&gt; Sátántangó (drama, 450 minutes)&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.theNextLineOfOutputContains(GenericCliProcessStepDefs.java:43)
+	at ✽.the next line of the output is &quot;Sátántangó (drama, 450 minutes)&quot;(file:///C:/Users/Lenovo%20PC/gyak/PROJECTS/java-beadandó/epam-deik-java-dev-2021-22_semester-01_Tuesday_group/final/ticket-service-acceptance-tests/src/test/resources/features/movies.feature:19)
+</failure>
+  </testcase>
+  <testcase classname="allows creating movie descriptions" name="an admin user can delete a movie" time="15.278">
+    <error type="java.util.concurrent.TimeoutException">java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:155)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.runWithTimeout(ProcessUnderTest.java:87)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.waitForOutput(ProcessUnderTest.java:42)
+	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.promptReturned(GenericCliProcessStepDefs.java:32)
+	at ✽.the prompt containing &quot;Ticket service&gt;&quot; is printed(file:///C:/Users/Lenovo%20PC/gyak/PROJECTS/java-beadandó/epam-deik-java-dev-2021-22_semester-01_Tuesday_group/final/ticket-service-acceptance-tests/src/test/resources/features/movies.feature:4)
+</error>
+  </testcase>
+  <testcase classname="allows creating movie descriptions" name="an unauthenticated user can list movies" time="15.248">
+    <error type="java.util.concurrent.TimeoutException">java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:155)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.runWithTimeout(ProcessUnderTest.java:87)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.waitForOutput(ProcessUnderTest.java:42)
+	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.promptReturned(GenericCliProcessStepDefs.java:32)
+	at ✽.the prompt containing &quot;Ticket service&gt;&quot; is printed(file:///C:/Users/Lenovo%20PC/gyak/PROJECTS/java-beadandó/epam-deik-java-dev-2021-22_semester-01_Tuesday_group/final/ticket-service-acceptance-tests/src/test/resources/features/movies.feature:4)
+</error>
+  </testcase>
+  <testcase classname="allow creating, reading, updating and deleting rooms where the screenings will happen" name="an admin user can create and list rooms" time="15.303">
+    <error type="java.util.concurrent.TimeoutException">java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:155)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.runWithTimeout(ProcessUnderTest.java:87)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.waitForOutput(ProcessUnderTest.java:42)
+	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.promptReturned(GenericCliProcessStepDefs.java:32)
+	at ✽.the prompt containing &quot;Ticket service&gt;&quot; is printed(file:///C:/Users/Lenovo%20PC/gyak/PROJECTS/java-beadandó/epam-deik-java-dev-2021-22_semester-01_Tuesday_group/final/ticket-service-acceptance-tests/src/test/resources/features/rooms.feature:5)
+</error>
+  </testcase>
+  <testcase classname="allow creating, reading, updating and deleting rooms where the screenings will happen" name="an admin user can update a room" time="15.312">
+    <error type="java.util.concurrent.TimeoutException">java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:155)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.runWithTimeout(ProcessUnderTest.java:87)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.waitForOutput(ProcessUnderTest.java:42)
+	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.promptReturned(GenericCliProcessStepDefs.java:32)
+	at ✽.the prompt containing &quot;Ticket service&gt;&quot; is printed(file:///C:/Users/Lenovo%20PC/gyak/PROJECTS/java-beadandó/epam-deik-java-dev-2021-22_semester-01_Tuesday_group/final/ticket-service-acceptance-tests/src/test/resources/features/rooms.feature:5)
+</error>
+  </testcase>
+  <testcase classname="allow creating, reading, updating and deleting rooms where the screenings will happen" name="an admin user can delete a room" time="15.445">
+    <error type="java.util.concurrent.TimeoutException">java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:155)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.runWithTimeout(ProcessUnderTest.java:87)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.waitForOutput(ProcessUnderTest.java:42)
+	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.promptReturned(GenericCliProcessStepDefs.java:32)
+	at ✽.the prompt containing &quot;Ticket service&gt;&quot; is printed(file:///C:/Users/Lenovo%20PC/gyak/PROJECTS/java-beadandó/epam-deik-java-dev-2021-22_semester-01_Tuesday_group/final/ticket-service-acceptance-tests/src/test/resources/features/rooms.feature:5)
+</error>
+  </testcase>
+  <testcase classname="allow creating, reading, updating and deleting rooms where the screenings will happen" name="an unauthenticated user can list rooms" time="15.411">
+    <error type="java.util.concurrent.TimeoutException">java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:155)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.runWithTimeout(ProcessUnderTest.java:87)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.waitForOutput(ProcessUnderTest.java:42)
+	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.promptReturned(GenericCliProcessStepDefs.java:32)
+	at ✽.the prompt containing &quot;Ticket service&gt;&quot; is printed(file:///C:/Users/Lenovo%20PC/gyak/PROJECTS/java-beadandó/epam-deik-java-dev-2021-22_semester-01_Tuesday_group/final/ticket-service-acceptance-tests/src/test/resources/features/rooms.feature:5)
+</error>
+  </testcase>
+  <testcase classname="allows creating, deleting and listing screenings" name="The admin user can create and query screenings" time="15.602">
+    <error type="java.util.concurrent.TimeoutException">java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:155)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.runWithTimeout(ProcessUnderTest.java:87)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.waitForOutput(ProcessUnderTest.java:42)
+	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.promptReturned(GenericCliProcessStepDefs.java:32)
+	at ✽.the prompt containing &quot;Ticket service&gt;&quot; is printed(file:///C:/Users/Lenovo%20PC/gyak/PROJECTS/java-beadandó/epam-deik-java-dev-2021-22_semester-01_Tuesday_group/final/ticket-service-acceptance-tests/src/test/resources/features/screenings.feature:4)
+</error>
+  </testcase>
+  <testcase classname="allows creating, deleting and listing screenings" name="The admin can not create overlapping screenings in the same room" time="15.623">
+    <error type="java.util.concurrent.TimeoutException">java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:155)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.runWithTimeout(ProcessUnderTest.java:87)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.waitForOutput(ProcessUnderTest.java:42)
+	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.promptReturned(GenericCliProcessStepDefs.java:32)
+	at ✽.the prompt containing &quot;Ticket service&gt;&quot; is printed(file:///C:/Users/Lenovo%20PC/gyak/PROJECTS/java-beadandó/epam-deik-java-dev-2021-22_semester-01_Tuesday_group/final/ticket-service-acceptance-tests/src/test/resources/features/screenings.feature:4)
+</error>
+  </testcase>
+  <testcase classname="allows creating, deleting and listing screenings" name="The admin can create overlapping screenings in different rooms" time="15.728">
+    <error type="java.util.concurrent.TimeoutException">java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:155)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.runWithTimeout(ProcessUnderTest.java:87)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.waitForOutput(ProcessUnderTest.java:42)
+	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.promptReturned(GenericCliProcessStepDefs.java:32)
+	at ✽.the prompt containing &quot;Ticket service&gt;&quot; is printed(file:///C:/Users/Lenovo%20PC/gyak/PROJECTS/java-beadandó/epam-deik-java-dev-2021-22_semester-01_Tuesday_group/final/ticket-service-acceptance-tests/src/test/resources/features/screenings.feature:4)
+</error>
+  </testcase>
+  <testcase classname="allows creating, deleting and listing screenings" name="The admin can not create screenings during a 10 minute long breaks after another screening in the same room" time="15.555">
+    <error type="java.util.concurrent.TimeoutException">java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:155)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.runWithTimeout(ProcessUnderTest.java:87)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.waitForOutput(ProcessUnderTest.java:42)
+	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.promptReturned(GenericCliProcessStepDefs.java:32)
+	at ✽.the prompt containing &quot;Ticket service&gt;&quot; is printed(file:///C:/Users/Lenovo%20PC/gyak/PROJECTS/java-beadandó/epam-deik-java-dev-2021-22_semester-01_Tuesday_group/final/ticket-service-acceptance-tests/src/test/resources/features/screenings.feature:4)
+</error>
+  </testcase>
+  <testcase classname="allows creating, deleting and listing screenings" name="The admin can create screenings even if there is a break after a screening in a different room" time="15.728">
+    <error type="java.util.concurrent.TimeoutException">java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:155)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.runWithTimeout(ProcessUnderTest.java:87)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.waitForOutput(ProcessUnderTest.java:42)
+	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.promptReturned(GenericCliProcessStepDefs.java:32)
+	at ✽.the prompt containing &quot;Ticket service&gt;&quot; is printed(file:///C:/Users/Lenovo%20PC/gyak/PROJECTS/java-beadandó/epam-deik-java-dev-2021-22_semester-01_Tuesday_group/final/ticket-service-acceptance-tests/src/test/resources/features/screenings.feature:4)
+</error>
+  </testcase>
+  <testcase classname="allows creating, deleting and listing screenings" name="The admin user can delete screenings" time="15.875">
+    <error type="java.util.concurrent.TimeoutException">java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:155)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.runWithTimeout(ProcessUnderTest.java:87)
+	at com.training.epam.ticketservice.at.ProcessUnderTest.waitForOutput(ProcessUnderTest.java:42)
+	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.promptReturned(GenericCliProcessStepDefs.java:32)
+	at ✽.the prompt containing &quot;Ticket service&gt;&quot; is printed(file:///C:/Users/Lenovo%20PC/gyak/PROJECTS/java-beadandó/epam-deik-java-dev-2021-22_semester-01_Tuesday_group/final/ticket-service-acceptance-tests/src/test/resources/features/screenings.feature:4)
+</error>
+  </testcase>
+</testsuite>

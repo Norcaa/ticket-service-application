@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="hu"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AuthCommandHandler.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ticket-service</a> &gt; <a href="index.source.html" class="el_package">com.epam.training.ticketservice.presentation.cli.handler</a> &gt; <span class="el_source">AuthCommandHandler.java</span></div><h1>AuthCommandHandler.java</h1><pre class="source lang-java linenums">package com.epam.training.ticketservice.presentation.cli.handler;
+
+import com.epam.training.ticketservice.service.UserService;
+import org.springframework.shell.standard.ShellComponent;
+import org.springframework.shell.standard.ShellMethod;
+
+@ShellComponent
+public class AuthCommandHandler {
+
+    private UserService userService;
+    private String username;
+    private String password;
+
+<span class="nc" id="L14">    public AuthCommandHandler(UserService userService) {</span>
+<span class="nc" id="L15">        this.userService = userService;</span>
+<span class="nc" id="L16">    }</span>
+
+    @ShellMethod(value = &quot;Sign in privileged&quot;, key = &quot;sign in privileged&quot;)
+    public String signInPrivileged(final String username, String password) {
+<span class="nc bnc" id="L20" title="All 4 branches missed.">        if (username.equals(&quot;admin&quot;) &amp;&amp; password.equals(&quot;admin&quot;)) {</span>
+<span class="nc" id="L21">            userService.adminLogIn();</span>
+<span class="nc" id="L22">            this.username = username;</span>
+<span class="nc" id="L23">            this.password = password;</span>
+<span class="nc" id="L24">            return &quot;Successful login.&quot;;</span>
+        }
+<span class="nc" id="L26">        return &quot;Login failed due to incorrect credentials&quot;;</span>
+    }
+
+    @ShellMethod(value = &quot;sign out&quot;, key = &quot;sign out&quot;)
+    public String signOut() {
+<span class="nc" id="L31">        userService.adminLogOut();</span>
+<span class="nc" id="L32">        return &quot;Successful log out.&quot;;</span>
+    }
+
+    @ShellMethod(value = &quot;Describe Account&quot;, key = &quot;describe account&quot;)
+    public String describeAccount() {
+<span class="nc bnc" id="L37" title="All 2 branches missed.">        if (userService.adminLoggedIn()) {</span>
+<span class="nc" id="L38">            return &quot;Signed in with privileged account '&quot; + this.username + &quot;'&quot;;</span>
+        }
+<span class="nc" id="L40">        return &quot;You are not signed in&quot;;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

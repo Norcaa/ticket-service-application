@@ -1,0 +1,455 @@
+1638353960427:list movies
+1638354021093:list rooms
+1638354040264:stacktrace
+1638354092155:exit
+1638354122367:list movies
+1638354140884:xit
+1638354142374:exit
+1638354168255:list movies
+1638354216714:exit
+1638354237862:list movies
+1638354401498:exot
+1638354406557:exit
+1638354428157:list movies
+1638354433364:list rooms
+1638354448008:exit
+1638354555186:list movies
+1638354557952:list rooms
+1638354593474:create movie Abrakadabra drama 90
+1638354597738:list movies
+1638354684689:exit
+1638354707256:list movies
+1638354716776:create movie Abrakadabra drama 90
+1638354722079:list movies
+1638354757568:exit
+1638354784148:create movie Abrakadabra drama 90
+1638354824591:exiz
+1638354825964:exit
+1638354854605:create movie Abrakadabra drama 90
+1638354858335:list movies
+1638354968727:exit
+1638354989284:list movies
+1638355000853:create movie Abrakadabra drama 90
+1638355006120:list movies
+1638355179971:exit
+1638355235352:create movie Abrakadabra drama 90
+1638355238079:list movies
+1638357232574:exit
+1638357324457:create movie Abrakadabra drama 90
+1638357327834:list movies
+1638357364763:exit
+1638357711669:create movie Abrakadabra drama 90
+1638357714726:list movies
+1638357719346:exit
+1638357747136:create movie Abrakadabra drama 90
+1638357750162:list movies
+1638357811899:delete Abraka
+1638357824664:delete movie Abrakadabra
+1638357830897:list movies
+1638357839965:create movie Abrakadabra drama 90
+1638357845258:list movies
+1638357857446:update movie Abrakadabra krimi 120
+1638357861464:list movies
+1638357948365:exit
+1638358114295:list rooms
+1638358120891:create room Nagyterem 10 20
+1638358124226:list rooms
+1638358167711:create room Kisterem 7 13
+1638358170129:list rooms
+1638358200960:update room Kisterem 8 13
+1638358204048:list rooms
+1638358251319:exit
+1638358283782:list rooms
+1638358300352:create room Nagyterem 10 20
+1638358304099:create room Kisterem 7 13
+1638358306269:list rooms
+1638358316462:update room Kisterem 8 13
+1638358319743:list rooms
+1638358400934:exit
+1638358421000:list rooms
+1638358425589:create room Nagyterem 10 20
+1638358427914:list rooms
+1638358431512:create room Kisterem 7 13
+1638358434253:list rooms
+1638358441445:update room Kisterem 8 13
+1638358448456:list rooms
+1638358457561:stacktrace
+1638358473200:exiz
+1638358474629:exit
+1638358604664:list rooms
+1638358608235:create room Nagyterem 10 20
+1638358611619:list rooms
+1638358620554:update room Nagyterem 11 20
+1638358623508:list rooms
+1638358756146:exit
+1638358774691:list rooms
+1638358778062:create room Nagyterem 10 20
+1638358780454:list rooms
+1638358788492:update room Nagyterem 11 20
+1638358795264:list rooms
+1638358843749:exit
+1638358865793:list rooms
+1638358869979:create room Nagyterem 10 20
+1638358872537:list rooms
+1638358880426:update room Nagyterem 11 20
+1638358886392:list rooms
+1638358958197:create room Nagyterem 10 20
+1638358961072:list rooms
+1638358967679:update room Nagyterem 11 20
+1638359013678:create room Nagyterem 10 20
+1638359016221:list rooms
+1638359022507:update Nagyterem 11 20
+1638359030923:update room Nagyterem 11 20
+1638359079777:list rooms
+1638359080834:create room Nagyterem 10 20
+1638359083062:list rooms
+1638359088160:update room Nagyterem 11 20
+1638359093202:list rooms
+1638359104560:exit
+1638359149181:list rooms
+1638359150790:create room Nagyterem 10 20
+1638359153186:list rooms
+1638359175698:update
+1638359191457:update room Nagyterem 11 20
+1638359195127:list rooms
+1638359205239:delete room Nagyterem
+1638359207932:list rooms
+1638359450864:exit
+1638371205802:create movie Abrakadabra drama 90
+1638371208113:list movies
+1638371221440:update movie Abrakadabra drama 120
+1638371225285:list movies
+1638371234919:delete movie Abrakadabra
+1638371237810:list movies
+1638371240800:list rooms
+1638371247954:create room Nagyterem 10 20
+1638371253469:list rooms
+1638371266015:update room Nagyterem 20 30
+1638371270798:list rooms
+1638371279286:delete room Nagyterem
+1638371282117:list rooms
+1638371286479:exit
+1638372411225:create movie Abrakadabra drama 90
+1638372415628:create room Nagyterem 10 20
+1638372452330:list movies
+1638372454045:list rooms
+1638372455413:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638372480941:create screening Abrakadabra Nagyterem 2021-12-05
+1638372496611:exit
+1638372529901:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638372534430:create movie Abrakadabra drama 90
+1638372537054:create room Nagyterem 10 20
+1638372541449:list movies
+1638372543788:list rooms
+1638372548223:list screenings
+1638372557493:create screening Abrakadabra Nagyterem 2021-12-05
+1638373127874:exit
+1638373156782:list movies
+1638373158542:list rooms
+1638373161760:list screenings
+1638373168286:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638373172228:list screening
+1638373177151:list screenings
+1638373198629:exit
+1638373399013:list movies
+1638373401515:list rooms
+1638373405136:create room Nagyterem 10 20
+1638373413296:create movie Abrakadabra drama 90
+1638373417928:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638373425175:list screenings
+1638373442196:delete sceenings Abrakadabra Nagyterem "2021-12-05 18:00"
+1638373449460:delete sceening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638373469770:delete screenings Abrakadabra Nagyterem "2021-12-05 18:00"
+1638373480791:delete screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638373500549:exit
+1638373535016:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638373541128:list screenings
+1638373547814:delete screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638373553724:list screenings
+1638374080427:exit
+1638374146306:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638374149987:list screenings
+1638374172242:create movie Abrakadabra drama 90
+1638374175799:create room Nagyterem 10 20
+1638374179907:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638374185936:list screenings
+1638374196575:delete screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638374201233:list screenings
+1638374721868:exit
+1638374778726:create movie Abrakadabra drama 60
+1638374784272:create room Nagyterem 10 20
+1638374792560:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638374801155:create screening Abrakadabra Nagyterem "2021-12-05 19:00"
+1638374906264:exit
+1638374926359:create movie Abrakadabra drama 60
+1638374931351:create room Nagyterem 10 20
+1638374936375:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638375054974:exit
+1638375072115:create movie Abrakadabra drama 90
+1638375075892:create room Nagyterem 10 20
+1638375086833:update movie Abrakadabra drama 60
+1638375090962:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638375156210:exit
+1638375183512:create movie Abrakadabra drama 60
+1638375187860:create room Nagyterem 10 20
+1638375191169:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638375252420:exit
+1638375278461:create movie Abrakadabra drama 60
+1638375280842:create room Nagyterem 10 20
+1638375283152:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638375367951:exit
+1638375509707:create movie Abrakadabra drama 60
+1638375512246:create room Nagyterem 10 20
+1638375514053:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638375571767:exit
+1638376205625:create movie Abrakadabra drama 60
+1638376210162:create room Nagyterem 10 20
+1638376213907:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638376222276:stacktrace
+1638376358574:create movie Abrakadabra drama 60
+1638376362906:create room Nagyterem 10 20
+1638376364607:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638376513394:create movie Abrakadabra drama 60
+1638376516857:create room Nagyterem 10 20
+1638376527919:create screening Abrakadabra Nagyterem "2021-12-05 18:00"create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638376529520:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638376588157:create movie Abrakadabra drama 60
+1638376591890:create room Nagyterem 10 20
+1638376596954:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638376826534:exit
+1638377936286:create movie Abrakadabra drama 60
+1638377941297:create room Nagyterem 10 20
+1638377945565:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638377975161:create movie Abrakadabra2 drama 90
+1638377982757:create screening Abrakadabra2 Nagyterem "2021-12-05 18:00"
+1638377997967:exit
+1638378865984:create movie Abrakadabra drama 60
+1638378872181:create room Nagyterem 10 20
+1638378875922:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638378881821:create screening Abrakadabra Nagyterem "2021-12-05 18:10"
+1638378888518:create screening Abrakadabra Nagyterem "2021-12-05 19:00"
+1638378896724:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638379233270:create movie Abrakadabra drama 60
+1638379236565:create room Nagyterem 10 20
+1638379242600:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638379256937:create screening Abrakadabra Nagyterem "2021-12-05 18:10"
+1638379262366:create screening Abrakadabra Nagyterem "2021-12-05 19:00"
+1638379266842:create screening Abrakadabra Nagyterem "2021-12-05 19:10"
+1638379280058:list screenings
+1638379290750:exit
+1638380649967:create movie Abrakadabra drama 60
+1638380655216:create room Nagyterem 10 20
+1638380658203:list screenings
+1638380665075:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638380764023:create movie Abrakadabra drama 60
+1638380769253:create room Nagyterem 10 20
+1638380772377:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638380782028:create screening Abrakadabra Nagyterem "2021-12-05 19:00"
+1638380786186:create screening Abrakadabra Nagyterem "2021-12-05 19:10"
+1638380791613:list screenings
+1638380799302:create screening Abrakadabra Nagyterem "2021-12-05 17:59"
+1638380813520:create screening Abrakadabra Nagyterem "2021-12-05 17:58"
+1638380817774:create screening Abrakadabra Nagyterem "2021-12-05 17:00"
+1638381233316:create movie Abrakadabra drama 60
+1638381237643:create room Nagyterem 10 20
+1638381244256:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638381271964:create screening Abrakadabra Nagyterem "2021-12-05 17-59"
+1638381279489:create screening Abrakadabra Nagyterem "2021-12-05 17:59"
+1638381299334:create screening Abrakadabra Nagyterem "2021-12-05 16:00"
+1638381315469:list screenings
+1638381349574:create screening Abrakadabra Nagyterem "2021-12-05 14:50"
+1638381374863:delete screening Abrakadabra Nagyterem "2021-12-05 14:50"
+1638381382281:create screening Abrakadabra Nagyterem "2021-12-05 14:51"
+1638381395469:delete screening Abrakadabra Nagyterem "2021-12-05 14:51"
+1638381406124:create screening Abrakadabra Nagyterem "2021-12-05 15:00"
+1638381420914:create screening Abrakadabra Nagyterem "2021-12-05 14:59"
+1638381956160:create movie Abrakadabra drama 60
+1638381960359:create room Nagyterem 10 20
+1638381964789:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638382482874:create movie Abrakadabra drama 60
+1638382486879:create room Nagyterem 10 20
+1638382492505:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638382502733:exit
+1638385813270:create movie Abrakadabra drama 60
+1638385817830:create room Nagyterem 10 20
+1638385824977:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638385830664:create screening Abrakadabra Nagyterem "2021-12-05 19:00"
+1638385835403:create screening Abrakadabra Nagyterem "2021-12-05 18:09"
+1638385844013:create screening Abrakadabra Nagyterem "2021-12-05 17:00"
+1638385850991:create screening Abrakadabra Nagyterem "2021-12-05 16:590"
+1638385857895:create screening Abrakadabra Nagyterem "2021-12-05 16:59"
+1638385863631:create screening Abrakadabra Nagyterem "2021-12-05 16:50"
+1638385867683:create screening Abrakadabra Nagyterem "2021-12-05 16:40"
+1638385874243:create screening Abrakadabra Nagyterem "2021-12-05 16:30"
+1638385877117:create screening Abrakadabra Nagyterem "2021-12-05 15:00"
+1638385879901:create screening Abrakadabra Nagyterem "2021-12-05 11:00"
+1638385884062:create screening Abrakadabra Nagyterem "2021-12-05 19:10"
+1638385890985:create screening Abrakadabra Nagyterem "2021-12-05 19:20"
+1638385899654:exit
+1638385970608:create movie Abrakadabra drama 60
+1638385972379:create room Nagyterem 10 20
+1638385974988:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638385986788:create screening Abrakadabra Nagyterem "2021-12-05 17:30"
+1638386080125:create movie Abrakadabra drama 60
+1638386085678:create room Nagyterem 10 20
+1638386098597:update movie Abrakadabra drama 50
+1638386107949:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638386112776:create screening Abrakadabra Nagyterem "2021-12-05 18:30"
+1638386125482:create screening Abrakadabra Nagyterem "2021-12-05 17:30"
+1638386343534:create screening Abrakadabra Nagyterem "2021-12-05 13:00"
+1638386473887:create movie Abrakadabra drama 60
+1638386488108:create movie Abrakadabra drama 50
+1638386490112:list movies
+1638386543263:create movie Abrakadabra drama 50
+1638386548234:create movie Abrakadabra drama 60
+1638386557682:delete movie Abrakadabra
+1638386560281:list movies
+1638386565379:delete movie Abrakadabra
+1638386568210:create movie Abrakadabra drama 50
+1638386574395:create room Nagyterem 10 20
+1638386614704:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638386623369:create screening Abrakadabra Nagyterem "2021-12-05 17:50"
+1638386656248:create screening Abrakadabra Nagyterem "2021-12-05 17:00"
+1638386672151:create screening Abrakadabra Nagyterem "2021-12-05 16:00"
+1638386790972:create movie Abrakadabra drama 60
+1638386794079:create room Nagyterem 10 20
+1638386798129:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638386800758:create screening Abrakadabra Nagyterem "2021-12-05 19:00"
+1638386804763:create screening Abrakadabra Nagyterem "2021-12-05 17:00"
+1638386836199:create screening Abrakadabra Nagyterem "2021-12-05 18:50"
+1638386846311:create screening Abrakadabra Nagyterem "2021-12-05 17:50"
+1638386853840:create screening Abrakadabra Nagyterem "2021-12-05 16:00"
+1638386864150:list screenings
+1638386873616:create screening Abrakadabra Nagyterem "2021-12-05 17:00"
+1638386907308:create screening Abrakadabra Nagyterem "2021-12-05 19:00"
+1638386964533:create screening Abrakadabra Nagyterem "2021-12-05 19:01"
+1638386968385:System.out.println("newStartDate: " + newStartDate);
+1638386979619:create screening Abrakadabra Nagyterem "2021-12-05 19:01"
+1638386982085:create screening Abrakadabra Nagyterem "2021-12-05 19:02"
+1638386985906:create screening Abrakadabra Nagyterem "2021-12-05 19:10"
+1638387017931:create movie Abrakadabra drama 60
+1638387023745:create room Nagyterem 10 20
+1638387028152:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638387031310:create screening Abrakadabra Nagyterem "2021-12-05 19:00"
+1638387056447:update movie Abrakadabra drama 50
+1638387063278:create screening Abrakadabra Nagyterem "2021-12-05 19:00"
+1638387107701:create screening Abrakadabra Nagyterem "2021-12-05 17:50"
+1638387122760:create screening Abrakadabra Nagyterem "2021-12-05 17:00"
+1638387213018:list screenings
+1638392619753:sign in privileged admin admin
+1638392761182:sign in privileged admin add
+1638392766177:sign in privileged admin admin
+1638392940784:sign in privileged
+1638392944339:sign in privileged admin admss
+1638392948587:sign in privileged admin admin
+1638392956527:exit
+1638393614808:create movie Abrakadabra drama 60
+1638393619747:create room Nagyterem 10 20
+1638393624413:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638393643901:sign in privileged admin admin
+1638393648814:create movie Abrakadabra drama 60
+1638393654151:create room Nagyterem 10 20
+1638393658939:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638393661599:create screening Abrakadabra Nagyterem "2021-12-05 17:00"
+1638393672066:create screening Abrakadabra Nagyterem "2021-12-05 17:50"
+1638393680922:create screening Abrakadabra Nagyterem "2021-12-05 17:40"
+1638393693545:create screening Abrakadabra Nagyterem "2021-12-05 16:50"
+1638393701259:list movies
+1638393711001:list rooms
+1638393724160:list screenings
+1638393730909:sign out
+1638393736298:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638438681691:create movie Abrakadabra drama 60
+1638438704760:sign in privileged admin admin
+1638438707932:create movie Abrakadabra drama 60
+1638438716197:update movie Abrakadabra kirmi 90
+1638438724400:list movies
+1638438729619:create room Nagyterem 10 20
+1638438739119:update room Nagyterem 20 30
+1638446871063:sign in privileged admin admin
+1638446874395:create movie Abrakadabra drama 60
+1638446886451:update movie Abrakadabra krimi 90
+1638526447397:create movie aba krii 10
+1638526453941:update movie aba krii 10
+1638526854619:create movie Sátántangó dram 450
+1638526861809:sign in privileged admin admin
+1638526866460:create movie Sátántangó dram 450
+1638526875116:update movie Sátántangó drama 450
+1638526880350:list movies
+1638526897069:delete movie Sátántangó
+1638526901181:list movies
+1638526925123:exit
+1638527628103:sign in privileged admin admin
+1638527634743:v
+1638527635791:create screening Sátántangó Pedersoli \\"2021-03-15 10:45\\"
+1638527642337:create screening Sátántangó Pedersoli "2021-03-15 10:45"
+1638527654072:create screening "Spirited Away" Pedersoli "2021-03-15 10:50"
+1638527706319:create screening Sátántangó Pedersoli \\"2021-03-15 10:50\\"
+1638527718788:create screening Sátántangó Pedersoli "2021-03-15 10:50"
+1638527740582:create screening Sátántangó Pedersoli "2021-03-15 10:45"
+1638527745286:list movies
+1638527748551:list screenings
+1638527766705:create movie Sátántangó dram 450
+1638527774658:create screening Sátántangó Pedersoli "2021-03-15 10:45"
+1638527784721:create screening Sátántangó Pedersoli "2021-03-15 10:50"
+1638528550380:sign in privileged admin admin
+1638528557261:create room Pedersoli 20 10
+1638528561011:update room Pedersoli 10 10
+1638528687166:exit
+1638528940966:sign in privileged admin admin
+1638528944966:create movie Sátántangó dram 450
+1638528949747:update movie Sátántangó drama 450
+1638528954291:list movies
+1638529240027:exit
+1638537829539:sign in privileged admin admin
+1638537855360:create screening Sátántangó Pedersoli 2021-12-15 10:00""
+1638537861369:create screening Sátántangó Pedersoli "2021-12-15 10:00"
+1638537874521:create screening Sátántangó Pedersoli "2021-12-15 10:10"
+1638537891873:create movie Sátántangó drama 120
+1638537898144:create screening Sátántangó Pedersoli "2021-12-15 10:00"
+1638537905150:create screening Sátántangó Pedersoli "2021-12-15 10:30"
+1638538314373:sign in privileged admin admin
+1638538319203:v
+1638538320274:create movie Abrakadabra drama 60
+1638538324266:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638538329433:create screening Abrakadabra Nagyterem "2021-12-05 18:10"
+1638538334327:create screening Abrakadabra Nagyterem "2021-12-05 19:00"
+1638538931315:sign in privileged admin admin
+1638538934538:create movie Abrakadabra drama 60
+1638538937995:create room Nagyterem 10 20
+1638538940584:create room Kisterem 7 13
+1638538946728:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638538965457:update movie Abrakadabra drama 50
+1638538972563:create screening Abrakadabra Nagyterem "2021-12-05 19:00"
+1638539002031:delete screening Abrakadabra Nagyterem "2021-12-05 19:00"
+1638539008181:list screenings
+1638539017737:create screening Abrakadabra Nagyterem "2021-12-05 18:10"
+1638539022317:create screening Abrakadabra Nagyterem "2021-12-05 18:50"
+1638539025930:create screening Abrakadabra Nagyterem "2021-12-05 19:59"
+1638539044463:list screenings
+1638539049893:create screening Abrakadabra Nagyterem "2021-12-05 19:58"
+1638539071195:delete screening Abrakadabra Nagyterem "2021-12-05 19:58"
+1638539074162:list screenings
+1638539082292:create screening Abrakadabra Nagyterem "2021-12-05 17:50"
+1638539096649:create screening Abrakadabra Nagyterem "2021-12-05 17:10"
+1638539104987:create screening Abrakadabra Nagyterem "2021-12-05 17:00"
+1638539110523:list screenings
+1638539120236:create screening Abrakadabra Nagyterem "2021-12-05 18:50"
+1638539331919:create screening Abrakadabra Nagyterem "2021-12-05 17:10"
+1638539349362:create screening Abrakadabra Nagyterem "2021-12-05 18:55"
+1638539353518:create screening Abrakadabra Nagyterem "2021-12-05 17:56"
+1638539359178:create screening Abrakadabra Nagyterem "2021-12-05 18:57"
+1638539846376:sign in privileged admin admin
+1638539850289:create movie Abrakadabra drama 60
+1638539854702:create room Nagyterem 10 20
+1638539858720:create screening Abrakadabra Nagyterem "2021-12-05 18:00"
+1638539875204:update movie Abrakadabra drama 180
+1638539882215:create screening Abrakadabra Nagyterem "2021-12-05 21:00"
+1638539886777:create screening Abrakadabra Nagyterem "2021-12-05 21:05"
+1638539891493:create screening Abrakadabra Nagyterem "2021-12-05 18:09"
+1638539898833:create screening Abrakadabra Nagyterem "2021-12-05 21:00"
+1638539910078:create screening Abrakadabra Nagyterem "2021-12-05 21:05"
+1638539912502:create screening Abrakadabra Nagyterem "2021-12-05 21:08"
+1638539914128:create screening Abrakadabra Nagyterem "2021-12-05 21:09"
+1638539917643:create screening Abrakadabra Nagyterem "2021-12-05 21:10"
+1638714980891:sign in
