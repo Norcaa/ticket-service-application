@@ -45,14 +45,14 @@ public class Movie {
 
     @Override
     public boolean equals(Object o) {
-<span class="pc bpc" id="L48" title="1 of 2 branches missed.">        if (this == o) {</span>
+<span class="fc bfc" id="L48" title="All 2 branches covered.">        if (this == o) {</span>
 <span class="fc" id="L49">            return true;</span>
         }
-<span class="nc bnc" id="L51" title="All 4 branches missed.">        if (o == null || getClass() != o.getClass()) {</span>
-<span class="nc" id="L52">            return false;</span>
+<span class="fc bfc" id="L51" title="All 4 branches covered.">        if (o == null || getClass() != o.getClass()) {</span>
+<span class="fc" id="L52">            return false;</span>
         }
-<span class="nc" id="L54">        Movie that = (Movie) o;</span>
-<span class="nc bnc" id="L55" title="All 6 branches missed.">        return that.length.equals(length) &amp;&amp; Objects.equals(that.genre, genre) &amp;&amp; Objects.equals(title, that.title);</span>
+<span class="fc" id="L54">        Movie that = (Movie) o;</span>
+<span class="fc bfc" id="L55" title="All 6 branches covered.">        return that.length.equals(length) &amp;&amp; Objects.equals(that.genre, genre) &amp;&amp; Objects.equals(title, that.title);</span>
     }
 
     @Override
@@ -62,7 +62,7 @@ public class Movie {
 
     @Override
     public String toString() {
-<span class="nc" id="L65">        return &quot;Movie{&quot; + &quot;title='&quot; + title + '\'' + &quot;, genre=&quot; + genre + &quot;, length=&quot; + length + '}';</span>
+<span class="fc" id="L65">        return &quot;Movie{&quot; + &quot;title='&quot; + title + '\'' + &quot;, genre=&quot; + genre + &quot;, length=&quot; + length + '}';</span>
     }
 
     /*public static final class SimpleMovieBuilder {

@@ -48,7 +48,7 @@ public class RoomCommandHandler {
     public String updateRoom(final String name, Integer rows, Integer columns) {
         if (userService.adminLoggedIn()) {
             roomService.updateRoom(name, rows, columns);
-            return null;
+            return "Room updated";
         }
         return "You are not an admin";
     }
@@ -62,7 +62,7 @@ public class RoomCommandHandler {
                     .orElse(null);
             if (roomToDelete != null) {
                 roomService.deleteRoom(roomToDelete);
-                return null;
+                return "Room deleted";
             } else {
                 return "Room do not exists.";
             }

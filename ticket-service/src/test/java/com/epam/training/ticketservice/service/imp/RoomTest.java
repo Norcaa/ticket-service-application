@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.BDDMockito;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+
 import java.util.Collections;
 import java.util.List;
 
@@ -111,6 +112,94 @@ public class RoomTest {
         List<Room> actualResult = underTest.getRooms();
         // Then
         Assertions.assertNull(actualResult);
+    }
+
+    @Test
+    public void testRoomsEqualsShouldReturnTrue() {
+        // Given
+        Boolean expectedResult = true;
+        BDDMockito.given(roomRepository.findByName(NAGYTEREM_NAME)).willReturn(NAGYTEREM_ROOM);
+        underTest = new RoomServiceImp(new Room(), roomRepository);
+        Room underTestRoom = underTest.createRoom(NAGYTEREM_NAME, 20, 10);
+        // When
+        Boolean actualResult = underTestRoom.equals(underTest.getRoom(NAGYTEREM_NAME));
+        // Then
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testRoomsEqualsWithNullShouldReturnFalse() {
+        // Given
+        Boolean expectedResult = false;
+        underTest = new RoomServiceImp(new Room(), roomRepository);
+        Room underTestRoom = underTest.createRoom(NAGYTEREM_NAME, 20, 10);
+        // When
+        Boolean actualResult = underTestRoom.equals(null);
+        // Then
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testRoomsEqualsWithDifferentClassShouldReturnFalse() {
+        // Given
+        Boolean expectedResult = false;
+        underTest = new RoomServiceImp(new Room(), roomRepository);
+        Room underTestRoom = underTest.createRoom(NAGYTEREM_NAME, 20, 10);
+        // When
+        Boolean actualResult = underTestRoom.equals(NAGYTEREM_NAME);
+        // Then
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testRoomsEqualsWithDifferentNameShouldReturnFalse() {
+        // Given
+        Boolean expectedResult = false;
+        BDDMockito.given(roomRepository.findByName(NAGYTEREM_NAME)).willReturn(NAGYTEREM_ROOM);
+        underTest = new RoomServiceImp(new Room(), roomRepository);
+        Room underTestRoom = underTest.createRoom(KISTEREM_NAME, 20, 10);
+        // When
+        Boolean actualResult = underTestRoom.equals(underTest.getRoom(NAGYTEREM_NAME));
+        // Then
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testRoomsEqualsWithDifferentRowsShouldReturnFalse() {
+        // Given
+        Boolean expectedResult = false;
+        BDDMockito.given(roomRepository.findByName(NAGYTEREM_NAME)).willReturn(NAGYTEREM_ROOM);
+        underTest = new RoomServiceImp(new Room(), roomRepository);
+        Room underTestRoom = underTest.createRoom(NAGYTEREM_NAME, 15, 10);
+        // When
+        Boolean actualResult = underTestRoom.equals(underTest.getRoom(NAGYTEREM_NAME));
+        // Then
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testRoomsEqualsWithDifferentColumnsShouldReturnFalse() {
+        // Given
+        Boolean expectedResult = false;
+        BDDMockito.given(roomRepository.findByName(NAGYTEREM_NAME)).willReturn(NAGYTEREM_ROOM);
+        underTest = new RoomServiceImp(new Room(), roomRepository);
+        Room underTestRoom = underTest.createRoom(NAGYTEREM_NAME, 20, 15);
+        // When
+        Boolean actualResult = underTestRoom.equals(underTest.getRoom(NAGYTEREM_NAME));
+        // Then
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testRoomsToStringShouldReturnCorrect() {
+        // Given
+        String expectedResult = "Room{" + "name='" + NAGYTEREM_NAME + '\'' + ", rows=" + 20 + ", columns=" + 10 + '}';
+        underTest = new RoomServiceImp(new Room(), roomRepository);
+        Room underTestRoom = underTest.createRoom(NAGYTEREM_NAME, 20, 10);
+        // When
+        String actualResult = underTestRoom.toString();
+        // Then
+        Assertions.assertEquals(expectedResult, actualResult);
     }
 
 }

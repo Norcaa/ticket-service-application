@@ -1,6 +1,6 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-ticket-service,com.epam.training.ticketservice.model,Room,81,28,11,1,10,10,14,5,8,5
-ticket-service,com.epam.training.ticketservice.model,Movie,78,31,11,1,9,11,13,6,7,6
+ticket-service,com.epam.training.ticketservice.model,Room,39,70,0,12,5,15,7,12,7,6
+ticket-service,com.epam.training.ticketservice.model,Movie,36,73,0,12,4,16,6,13,6,7
 ticket-service,com.epam.training.ticketservice.model,Projection,78,29,9,1,9,12,12,6,7,6
 ticket-service,com.epam.training.ticketservice.presentation.cli.config,TicketServiceConfiguration,26,0,0,0,5,0,5,0,5,0
 ticket-service,com.epam.training.ticketservice,Application,8,0,0,0,3,0,2,0,2,0

@@ -115,8 +115,93 @@ public class MovieTest {
     }
 
     @Test
-    public void testGetMovieLengthShouldReturnListOf() {
+    public void testMoviesEqualsShouldReturnTrue() {
+        // Given
+        Boolean expectedResult = true;
+        BDDMockito.given(movieRepository.findByTitle(ABRAKADABRA_TITLE)).willReturn(ABRAKADABRA_MOVIE);
+        underTest = new MovieServiceImp(new Movie(), movieRepository);
+        Movie underTestMovie = underTest.createMovie(ABRAKADABRA_TITLE, "krimi", 180);
+        // When
+        Boolean actualResult = underTestMovie.equals(underTest.getMovie(ABRAKADABRA_TITLE));
+        // Then
+        Assertions.assertEquals(expectedResult, actualResult);
     }
+
+    @Test
+    public void testMoviesEqualsWithNullShouldReturnFalse() {
+        // Given
+        Boolean expectedResult = false;
+        underTest = new MovieServiceImp(new Movie(), movieRepository);
+        Movie underTestMovie = underTest.createMovie(ABRAKADABRA_TITLE, "krimi", 180);
+        // When
+        Boolean actualResult = underTestMovie.equals(null);
+        // Then
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testMoviesEqualsWithDifferentClassShouldReturnFalse() {
+        // Given
+        Boolean expectedResult = false;
+        underTest = new MovieServiceImp(new Movie(), movieRepository);
+        Movie underTestMovie = underTest.createMovie(ABRAKADABRA_TITLE, "krimi", 450);
+        // When
+        Boolean actualResult = underTestMovie.equals(ABRAKADABRA_TITLE);
+        // Then
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testMoviesEqualsWithDifferentTitleShouldReturnFalse() {
+        // Given
+        Boolean expectedResult = false;
+        BDDMockito.given(movieRepository.findByTitle(ABRAKADABRA_TITLE)).willReturn(ABRAKADABRA_MOVIE);
+        underTest = new MovieServiceImp(new Movie(), movieRepository);
+        Movie underTestMovie = underTest.createMovie(SATANTANGO_TITLE, "krimi", 180);
+        // When
+        Boolean actualResult = underTestMovie.equals(underTest.getMovie(ABRAKADABRA_TITLE));
+        // Then
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testMoviesEqualsWithDifferentGenreShouldReturnFalse() {
+        // Given
+        Boolean expectedResult = false;
+        BDDMockito.given(movieRepository.findByTitle(ABRAKADABRA_TITLE)).willReturn(ABRAKADABRA_MOVIE);
+        underTest = new MovieServiceImp(new Movie(), movieRepository);
+        Movie underTestMovie = underTest.createMovie(ABRAKADABRA_TITLE, "drama", 180);
+        // When
+        Boolean actualResult = underTestMovie.equals(underTest.getMovie(ABRAKADABRA_TITLE));
+        // Then
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testMoviesEqualsWithDifferentLengthShouldReturnFalse() {
+        // Given
+        Boolean expectedResult = false;
+        BDDMockito.given(movieRepository.findByTitle(ABRAKADABRA_TITLE)).willReturn(ABRAKADABRA_MOVIE);
+        underTest = new MovieServiceImp(new Movie(), movieRepository);
+        Movie underTestMovie = underTest.createMovie(ABRAKADABRA_TITLE, "krimi", 450);
+        // When
+        Boolean actualResult = underTestMovie.equals(underTest.getMovie(ABRAKADABRA_TITLE));
+        // Then
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testMoviesToStringShouldReturnTrue() {
+        // Given
+        String expectedResult = "Movie{" + "title='" + ABRAKADABRA_TITLE + '\'' + ", genre=" + "krimi" + ", length=" + 450 + '}';
+        underTest = new MovieServiceImp(new Movie(), movieRepository);
+        Movie underTestMovie = underTest.createMovie(ABRAKADABRA_TITLE, "krimi", 450);
+        // When
+        String actualResult = underTestMovie.toString();
+        // Then
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
 
     /*
     @Override

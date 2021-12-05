@@ -47,7 +47,7 @@ public class MovieCommendHandler {
     public String updateMovie(final String title, String genre, Integer length) {
         if (userService.adminLoggedIn()) {
             movieService.updateMovie(title, genre, length);
-            return null;
+            return "Movie updated";
         }
         return "You are not an admin";
     }
@@ -61,7 +61,7 @@ public class MovieCommendHandler {
                     .orElse(null);
             if (movieToDelete != null) {
                 movieService.deleteMovie(movieToDelete);
-                return null;
+                return "Movie deleted";
             } else {
                 return "Movie do not exists.";
             }
